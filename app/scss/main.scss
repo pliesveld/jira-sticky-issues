@@ -1,3 +1,19 @@
 body {
   background-color: rgba(255,255,255,150);
 };
+
+article {
+  width: 23em;
+  border: 1px dashed black;
+}
+
+article > section {
+  width: 100%;
+  text-align: center;
+}
+
+article > footer {
+  vertical-align: text-bottom;
+  text-align: bottom;
+}
+
