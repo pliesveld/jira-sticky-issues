@@ -1,13 +1,17 @@
 ## Installation
 
-#### install npm
+  npm install -g gulp-cli
 
-npm install -g gulp-cli
+  npm install
 
-npm install
+  bower install
 
-bower install
+  gulp vendor-dev
 
-gulp vendor-dev
+  gulp default
 
-gulp default
+
+## Developing
+
+  gulp watch
+
