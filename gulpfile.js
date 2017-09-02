@@ -60,6 +60,7 @@ gulp.task('browserSync', function() {
 gulp.task('watch', ['browserSync', 'sass', 'js'], function() {
   gulp.watch('app/scss/**/*.scss', ['sass']);
 
+  gulp.watch('app/data/*.json', browserSync.reload);
   gulp.watch('app/**/*.html', browserSync.reload);
   gulp.watch('app/js/frontend.js', browserSync.reload);
 
