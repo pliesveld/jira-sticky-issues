@@ -5,13 +5,13 @@ body {
 
 article {
   width: 23em;
-  //min-height: 19em; 
   border: 1px dashed black;
   margin: 0.5em 0.8em;
 }
 
 
 article > section {
+  height: 14em;
   font-family: Courier New;
   text-align: center;
 }
