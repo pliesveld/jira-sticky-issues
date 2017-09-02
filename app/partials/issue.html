@@ -1,4 +1,7 @@
 <div class="row" ng-repeat="anissue in issues track by $index" ng-if="$index % 3 == 0">
+    <div ng-if="$index % 21 == 0" class="page-break"></div>
+
+
     <div class="col-xs-4"
     ng-repeat="i in [$index, $index + 1, $index + 2]"
     ng-if="issues[i] != null"
