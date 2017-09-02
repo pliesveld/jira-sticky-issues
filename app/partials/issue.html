@@ -1,5 +1,5 @@
 <div class="row" ng-repeat="anissue in issues track by $index" ng-if="$index % 3 == 0">
-    <div ng-if="$index % 21 == 0" class="page-break"></div>
+    <div ng-if="$index % 12 == 0" class="page-break"></div>
 
 
     <div class="col-xs-4"
@@ -19,9 +19,9 @@
         </header>
 
         <section class="panel-body">
-          <h5 class="center">
+          <h2 class="text-center">
           {{issues[i]["DESCRIPTION"]}}
-          </h5>
+          </h2>
         </section>
 
         <footer class="panel-footer">
