@@ -32,7 +32,7 @@ angular.module('App', ['ui.router'])
           url: 'child2',
           templateUrl: 'partials/issue.html', 
           controller: function($scope, $stateParams, $http) {
-            $http.get('data/test2.json')
+            $http.get('data/current_tasks.json')
                 .then(function(res) {
               $scope.issues = res.data
             })
