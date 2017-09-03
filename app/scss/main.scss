@@ -16,5 +16,7 @@ article > section {
   text-align: center;
 }
 
-
+article > header div + div {
+  margin-top: -20px;
+}
 .page-break	{ display: block; page-break-after: always; }
