@@ -1,22 +1,34 @@
+$labelFontSize: 1.2em;
+
 body {
   background-color: rgba(255,255,255,150);
 };
 
+.panel {
+  border: 1.3px solid black;
+}
+
 
 article {
   width: 23em;
-  border: 1px dashed black;
+  border: 1px solid black;
   margin: 0.5em 0.8em;
+
+  & > section {
+	  height: 14em;
+	  font-family: Courier New;
+	  text-align: center;  
+  }
+
+  & > header {
+  	.label {
+  		font-size: $labelFontSize;
+  	}
+  	.label-primary {
+  		margin: -20px;
+  		font-size: $labelFontSize*1.75;
+  	} 	
+  }
 }
 
-
-article > section {
-  height: 14em;
-  font-family: Courier New;
-  text-align: center;
-}
-
-article > header div + div {
-  margin-top: -20px;
-}
 .page-break	{ display: block; page-break-after: always; }
