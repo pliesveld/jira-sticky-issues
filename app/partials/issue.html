@@ -1,17 +1,15 @@
-<div class="row" ng-repeat="anissue in issues track by $index" ng-if="$index % 3 == 0">
-    <div ng-if="$index % 12 == 0" class="page-break"></div>
+<div class="row" ng-repeat="anissue in issues track by $index" ng-if="$index % 2 == 0">
+    <div ng-if="$index % 6 == 0" class="page-break"></div>
 
 
-    <div class="col-xs-4"
-    ng-repeat="i in [$index, $index + 1, $index + 2]"
-    ng-if="issues[i] != null"
-    >
+    <div class="col-xs-5"
+    ng-repeat="i in [$index, $index + 1]" ng-if="issues[i] != null">
       <article class="panel panel-default">
         <header class="panel-heading clearfix">
 
           <div class="row">
               <div class="col-xs-6">
-                  <span class="label label-default">
+                  <span class="label">
                   {{issues[i]["PARENT_ISSUE"]}}
                   </span>
               </div>
@@ -19,7 +17,7 @@
 
               <div class="col-xs-6">
                 <div class="pull-right">
-                      <span class="label label-primary">
+                      <span class="label">
                       {{issues[i]["TASK_ISSUE"]}}
                       </span>
                   </div>
@@ -37,12 +35,12 @@
         <footer class="panel-footer clearfix">
           <div class="row">
               <div class="col-xs-6">
-              <span class="label label-success">{{issues[i]["HOURS"]}}</span>
+              <span class="label hours">{{issues[i]["HOURS"]}} H</span>
             </div>
 
               <div class="col-xs-6">
                 <div class="pull-right">
-                    <span class="label label-info">
+                    <span class="label initials">
                       {{issues[i]["IN"]}}
                     </span>
                 </div>
@@ -52,3 +50,18 @@
       </article>
     </div>
 </div>
+
+<style media="print" type="text/css">
+
+.col-xs-5 {
+    margin-left: 40px !important;
+}
+    .panel {
+  border: none;
+  box-shadow: none;
+   background:#00BFFF !important;
+}
+.label{
+  border:none !important;
+}
+</style>

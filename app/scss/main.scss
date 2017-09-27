@@ -1,13 +1,55 @@
-$labelFontSize: 1.2em;
+$labelFontSize: 1.8em;
 
 body {
   background-color: rgba(255,255,255,150);
+  -webkit-print-color-adjust: exact;
 };
 
-.panel {
-  border: 1.3px solid black;
+.col-xs-5 {
+    margin-left: 25px;
 }
 
+.panel {
+  border: none;
+  box-shadow: none;
+   background:#00BFFF;
+       width: 430px;
+    height: 420px;
+}
+
+h2.text-center {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+header.panel-heading.clearfix {
+    border: none;
+    background: none;
+}
+
+span.label {
+    color: #000;
+}
+
+
+.panel-footer {
+    padding: 10px 15px;
+    background: none;
+    border: none;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+span.label.hours {
+    font-size: 30px;
+}
+
+
+
+span.label.initials {
+    font-size: 30px;
+    text-transform: uppercase;
+}
 
 article {
   width: 23em;
@@ -15,7 +57,7 @@ article {
   margin: 0.5em 0.8em;
 
   & > section {
-	  height: 14em;
+	  height: 23em;
 	  font-family: Courier New;
 	  text-align: center;  
   }
